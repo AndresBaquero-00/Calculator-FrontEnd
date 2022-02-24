@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(220, 28%, 35%);;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 35%;
+    padding: 20px;
+}
+
+.display {
+    width: 100%;
+    background-color: transparent
+}
+
+
+.display input{
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 35px;
+    padding: 10px;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    text-align: end;
+    font-family: Spartan;
+    outline: none;
+    height: 80px;
+}
+
+
+.calculator-body {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: hsl(220, 27%, 22%);
+    margin-top: 20px;
+    padding: 20px;
+    row-gap: 25px;
+    justify-items: center;
+    align-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Spartan;
+    cursor: pointer;
+    height: 50px;
+    width: 80%;
+}
+
+.numero, .operacion {
+    background-color: white;
+    box-shadow: 0 5px rgb(190, 190, 190);
+    color: hsl(221, 14%, 31%);
+}
+
+.funcion {
+    background-color: hsl(221, 19%, 57%);
+    box-shadow: 0 5px hsl(222, 21%, 44%);
+    color: white;
+    font-size: 18px;
+}
+
+#RESET {
+    grid-column-end: span 2;
+    width: 90%;
+}
+
+#IGUAL {
+    grid-column-end: span 2;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 5px hsl(6, 70%, 34%);
+    color: white;
+    width: 90%;
+}
+
+/*Feel free to remove these styles or customise in your own stylesheet 👍*/
+.attribution { 
+    font-size: 20px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(56, 75%, 73%);
+    text-decoration: none;
+}
